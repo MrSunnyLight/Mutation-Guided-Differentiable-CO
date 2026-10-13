@@ -1,4 +1,8 @@
-# Differentiable Repairability & Mutations for Scalable Combinatorial Optimization
+# Differentiable Repairability & Mutations for Scalable Combinatorial Optimization (mQO)
+
+[![arXiv](https://img.shields.io/badge/arXiv-2605.06921-b31b1b.svg)](https://arxiv.org/abs/2605.06921)
+
+Paper link: [arXiv:2605.06921](https://arxiv.org/abs/2605.06921)
 
 This repository contains Python code for solving **Maximum Independent Set (MIS)** and **Maximum Cut (MaxCut)** problems with continuous optimization.
 
@@ -38,6 +42,22 @@ python -m pip install numpy scipy networkx psutil
 
 Install PyTorch using the command from the [official installation page](https://pytorch.org/get-started/locally/). Select your operating system and the appropriate CPU or CUDA build. The CUDA choice should match your machine.
 
+## Run
+
+Run a script from the repository folder. For example, to solve MIS:
+
+```bash
+python mqo-mis.py
+```
+
+To solve MaxCut:
+
+```bash
+python mqo-maxcut.py
+```
+
+For the parallel versions, run `pmqo-mis.py` or `pmqo-maxcut.py` instead.
+
 ## Citation
 
 If you use the method or code, cite the paper:
@@ -45,10 +65,11 @@ If you use the method or code, cite the paper:
 ```bibtex
 @article{sun2026differentiable,
   title   = {Differentiable Repairability \& Mutations for Scalable Combinatorial Optimization},
-  author  = {Sun, Yongliang and Alkhouri, Ismail R. and Huang, Cheng-Han and
+  author  = {Sun, Yongliang and Alkhouri, Ismail and Huang, Cheng-Han and
              Velasquez, Alvaro and Jha, Susmit and Wang, Rongrong},
   journal = {arXiv preprint arXiv:2605.06921},
   year    = {2026},
+  doi     = {10.48550/arXiv.2605.06921},
   url     = {https://arxiv.org/abs/2605.06921}
 }
 ```
