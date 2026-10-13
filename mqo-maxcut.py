@@ -5,7 +5,7 @@ import psutil, os
 import time
 from typing import Tuple, Dict
 
-device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Using device:", device)
 
 # ============================================================
