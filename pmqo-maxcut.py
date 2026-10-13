@@ -6,7 +6,7 @@ import time
 import scipy.sparse as sp
 from typing import Tuple, Dict, List
 
-device = torch.device('cuda:6' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print("Using device:", device)
 
 # ============================================================
