@@ -58,6 +58,8 @@ python mqo-maxcut.py
 
 For the parallel versions, run `pmqo-mis.py` or `pmqo-maxcut.py` instead.
 
+**Parameter tuning.** For graphs not evaluated in our paper, we recommend tuning the step size and momentum.
+
 ## Citation
 
 If you use the method or code, cite the paper:
